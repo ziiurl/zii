@@ -1,0 +1,662 @@
+
+<!DOCTYPE html>
+
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths perfect-scrollbar-off gr__demos_creative-tim_com">
+<head itemscope itemtype="https://schema.org/WebSite">
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link rel="apple-touch-icon" href="/images/i.png">
+<link rel="icon" href="/images/i.png">
+
+<title>Zii Url Shortener API</title>
+
+<link rel="canonical" href="/">
+<link href="https://zii.bz/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+
+
+<meta name="description" content="With the Zii URL Shortener API you can write applications that use simple HTTP methods to create, inspect, and manage zii.bz short links from a desktop, mobile, or web.">
+
+<meta itemprop="name" content="Zii Url Shortener">
+<meta itemprop="description" content="Easiest Way to shorten URLs to make them more user friendly and easiest to share using the Zii URL shortener.">
+
+<meta itemprop="image" content="/images/i.png">
+
+<meta name="twitter:card" content="product">
+<meta name="twitter:site" content="@Ziishurl">
+<meta name="twitter:title" content="Zii Url Shortener">
+
+<meta name="twitter:description" content="Easiest Way to shorten URLs to make them more user friendly and easiest to share using the Zii URL shortener.">
+<meta name="twitter:creator" content="@Ziishurl">
+<meta name="twitter:image" content="/images/i.png">
+<meta name="twitter:data1" content="Zii Url Shortener API">
+<meta name="twitter:label1" content="Product Type">
+
+<meta name="application-name" content="Zii Url Shortener"/>
+<meta name="msapplication-square70x70logo" content="/images/small.jpg"/>
+<meta name="msapplication-square150x150logo" content="/images/medium.jpg"/>
+<meta name="msapplication-wide310x150logo" content="/images/wide.jpg"/>
+<meta name="msapplication-square310x310logo" content="/images/large.jpg"/>
+<meta name="msapplication-TileColor" content="#0060df"/>
+<meta name="msapplication-notification" content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=https://zii.bz/&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=https://zii.bz/&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=https://zii.bz/&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=https://zii.bz/&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=https://zii.bz/&amp;id=5; cycle=1"/>
+
+<meta property="og:title" content="Zii Url Shortener API">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/">
+<meta property="og:image" content="/images/i.png">
+<meta property="og:description" content="Easiest Way to shorten URLs to make them more user friendly and easiest to share using the Zii URL shortener.">
+<meta property="og:site_name" content="Zii Url Shortener">
+
+
+<style class="anchorjs"></style>
+<link rel="stylesheet" type="text/css" href="/dd/css.css">
+<link href="https://zii.bz/css/amy.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/dd/material-dashboard.min.css">
+
+
+<link rel="stylesheet" href="/dd/docsearch.min.css">
+
+<link rel="stylesheet" href="/dd/docs.min.css">
+<link rel="stylesheet" href="/dd/xcode.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-86277103-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-86277103-2');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MW9H2QJ');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://zii.bz",
+  "name": "Zii Url Shortener",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "url": "https://zii.bz",
+    "contactType": "Customer service"
+  }
+}
+</script>
+<style>
+   .navbar-absolute-logo{
+       padding-left: 45px;
+   }
+   .navbar-absolute-logo img{
+       position: absolute;
+       left: 15px;
+       margin-top: -6px;
+   }
+   body{
+     background: white;
+   }
+</style>
+
+
+  <link href="/dd/css1.css" rel="stylesheet">
+
+</head>
+
+<span id="warning-container">
+  <i data-reactroot=""></i>
+</span>
+
+  
+  <body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active" data-gr-c-s-loaded="true">
+
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    <header class="navbar navbar-expand navbar-dark bg-primary flex-column gd1 flex-md-row bd-navbar">
+  <a class="navbar-brand mr-0 mr-md-2 navbar-absolute-logo" href="/">
+    Zii Url Shortener
+  </a>
+
+  <ul class="navbar-nav flex-row d-none d-md-flex">
+
+    <li class="nav-item dropdown">
+        <a class="nav-item nav-link dropdown-toggle mr-md-2" href="/apikey" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    v1.0.1
+    <div class="ripple-container"></div></a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+            <a class="dropdown-item active" href="/apikey">Zii - 1.0.1</a>
+         
+        </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link p-2" href="/" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false"><title>GitHub</title><path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z" fill="currentColor" fill-rule="evenodd"></path></svg>
+
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://twitter.com/Ziishurl" target="_blank" rel="noopener" aria-label="Twitter">
+        <svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 416.32" focusable="false"><title>Twitter</title><path d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92" fill="currentColor"></path></svg>
+
+      </a>
+    </li>
+  </ul>
+
+  <div class="navbar-nav-scroll ml-md-auto ">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+        <li class="nav-item">
+          <a class="nav-link active" href="/"><i class="mdi mdi-speedometer mdi-24px"></i>  Home</a>
+        </li>
+
+      
+         <li class="nav-item postman-run-button"
+                        data-postman-action="collection/import"
+                        data-postman-var-1="e89b517ec4b5c5d79846">
+          </li>
+
+    </ul>
+  </div>
+
+
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <nav class="collapse bd-links" id="bd-docs-nav">
+  <div class="bd-toc-item active">
+      <a class="bd-toc-link" href="#document">
+        Getting started
+      </a>
+
+      <ul class="nav bd-sidenav">
+
+          <li class="active bd-sidenav-active">
+                <a href="#document-1" onclick="smoothScroll(document.getElementById('content'))">
+                  Introduction
+                </a>
+          </li>
+          <li class="">
+                <a href="#document-2" onclick="smoothScroll(document.getElementById('sffsds'))">
+                    License
+                </a>
+
+          </li>
+      </ul>
+    </div>
+    <div class="bd-toc-item active">
+
+      <ul class="nav bd-sidenav">
+      	          <li class="">
+                <a class="font-weight-light" href="#" onclick="smoothScroll(document.getElementById('31f0e274cf4d4f328fc4dd640019d339'))">
+                  Get List Of Single Shorten Url By GET
+                </a>
+          </li>
+                    <li class="">
+                <a class="font-weight-light" href="#" onclick="smoothScroll(document.getElementById('3e26e84f0c0d4362a7841cef6b7d00d7'))">
+                  Create Short Url By POST
+                </a>
+          </li>
+                    <li class="">
+                <a class="font-weight-light" href="#" onclick="smoothScroll(document.getElementById('661cbd5fc8a74fdcaa6f31466e3bc2e2'))">
+                  Get List Of All Shorten Url By GET
+                </a>
+          </li>
+                    <li class="">
+                <a class="font-weight-light" href="#" onclick="smoothScroll(document.getElementById('6cb683cf137e4e51a39bf60075474cf9'))">
+                  Get List Of Single Shorten Url By POST
+                </a>
+          </li>
+                    <li class="">
+                <a class="font-weight-light" href="#" onclick="smoothScroll(document.getElementById('9abcdad0f96a42369c44acc2d96d588b'))">
+                  Get List Of All Shorten Url By POST
+                </a>
+          </li>
+                    <li class="">
+                <a class="font-weight-light" href="#" onclick="smoothScroll(document.getElementById('ca2ebb6a4d7b4caa8187a42065977998'))">
+                  Delete Short Url
+                </a>
+          </li>
+                    <li class="">
+                <a class="font-weight-light" href="#" onclick="smoothScroll(document.getElementById('ec2da4fe329b4281a74e2f0d3d92fa0b'))">
+                  Create Short Url By GET
+                </a>
+          </li>
+                </ul>
+    </div>
+
+
+</nav>
+
+        </div>
+
+
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#description" onclick="smoothScroll(document.getElementById('description'))">Description</a></li>
+<li class="toc-entry toc-h2"><a href="#quick-start" onclick="smoothScroll(document.getElementById('quick-start'))">Quick start</a>
+
+<li class="toc-entry toc-h3"><a href="#31f0e274-cf4d-4f32-8fc4-dd640019d339" onclick="smoothScroll(document.getElementById('31f0e274cf4d4f328fc4dd640019d339'))">Get List Of Single Shorten Url By GET</a></li>
+<li class="toc-entry toc-h3"><a href="#3e26e84f-0c0d-4362-a784-1cef6b7d00d7" onclick="smoothScroll(document.getElementById('3e26e84f0c0d4362a7841cef6b7d00d7'))">Create Short Url By POST</a></li>
+<li class="toc-entry toc-h3"><a href="#661cbd5f-c8a7-4fdc-aa6f-31466e3bc2e2" onclick="smoothScroll(document.getElementById('661cbd5fc8a74fdcaa6f31466e3bc2e2'))">Get List Of All Shorten Url By GET</a></li>
+<li class="toc-entry toc-h3"><a href="#6cb683cf-137e-4e51-a39b-f60075474cf9" onclick="smoothScroll(document.getElementById('6cb683cf137e4e51a39bf60075474cf9'))">Get List Of Single Shorten Url By POST</a></li>
+<li class="toc-entry toc-h3"><a href="#9abcdad0-f96a-4236-9c44-acc2d96d588b" onclick="smoothScroll(document.getElementById('9abcdad0f96a42369c44acc2d96d588b'))">Get List Of All Shorten Url By POST</a></li>
+<li class="toc-entry toc-h3"><a href="#ca2ebb6a-4d7b-4caa-8187-a42065977998" onclick="smoothScroll(document.getElementById('ca2ebb6a4d7b4caa8187a42065977998'))">Delete Short Url</a></li>
+<li class="toc-entry toc-h3"><a href="#ec2da4fe-329b-4281-a74e-2f0d3d92fa0b" onclick="smoothScroll(document.getElementById('ec2da4fe329b4281a74e2f0d3d92fa0b'))">Create Short Url By GET</a></li>
+</ul>
+   </div>
+
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content"><a class="anchorjs-link " href="#content" aria-label="Anchor link for: content" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Introduction </h1>
+          <p class="bd-lead">Zii URL Shortener at <a href="/">zii.bz</a> is a platform that takes long URLs and compresses them into fewer characters to make a URL link that is easiest to share, tweet, or email to friends & family. </p>
+          <h2 id="description"><div><a class="anchorjs-link " href="#description" aria-label="Anchor link for: description" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Description</div></h2>
+<p>Users can create these short links through the web interface at <a href="/">zii.bz</a>, or programatically create them through the URL Shortener API. With the Zii URL Shortener API you can write applications that use simple HTTP methods to create, inspect, and manage <a href="/">zii.bz</a> short links from a desktop, mobile, or web.
+Links that users create through the URL Shortener can be automatically operated in your mobile applications that can handle those links, respectively. This automatic behavior provides the possible experience to your app users who open <a href="/">zii.bz</a> links, no matter what platform or device they are on.</p>
+
+<h2 id="quick-start"><div><a class="anchorjs-link " href="#quick-start" aria-label="Anchor link for: quick start" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Quick start</div></h2>
+
+<p>Create a shortened URL
+	<li>	Visit the <a href="/">zii.bz</a> URL shortener site at </li>
+	<li>	If you aren’t signed in, click the Register button in the top right corner to get you started.</li>
+	<li>	Write or paste your URL in the Generate short link box.</li>
+	<li>	Click SUBMIT</li>
+Below the “Generate short link ” box, you’ll see the long version of your url and the short version. Once created, your link won’t expire unless it has to be removed for spam, privacy, or legal reasons.</p>
+<h3 id="31f0e274cf4d4f328fc4dd640019d339"><div><a class="anchorjs-link " href="#31f0e274-cf4d-4f32-8fc4-dd640019d339" aria-label="Anchor link for: 31f0e274-cf4d-4f32-8fc4-dd640019d339" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Get List Of Single Shorten Url By GET</div></h3>
+
+<div class="bd-clipboard">
+    <span class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</span>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+	<pre>
+        <code class="curl" data-lang="curl">
+        Method PHP CURL 'GET'<br>
+        $curl = curl_init();
+            curl_setopt_array($curl, array(
+            CURLOPT_PORT => "443",
+            CURLOPT_URL => "https://zii.bz/api/gshort?accountID=eyJpdiI6ImZ2M0JTbUNvbTNsWHhTUjU1a1pacVE9PSIsInZhbHVlIjoiR0JWUFI4Z1dtN2U4aWRyNVVJYkZrNE1oeDYwQmRQXC9wUnBXVHlDamhHMEFkM2pJRlRjRFZRSDlBWXhWejl0ZWwiLCJtYWMiOiIzNTQzOGI2NWU5ODgxOTVjN2U0ZTE5ZWIwMjA3MTg2ODBiZDliOTk5ZGMzNDU5ZWU1NGMwNzM3NWUyNzUwNTk4In0&amp;UrlId=6MsmiA",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+                     CURLOPT_HTTPHEADER => array(),
+          ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            return "cURL Error #:" . $err;
+        } else {
+            return json_decode($response,true);
+        }
+
+        </code>
+    </pre>
+</figure>
+<h3 id="3e26e84f0c0d4362a7841cef6b7d00d7"><div><a class="anchorjs-link " href="#3e26e84f-0c0d-4362-a784-1cef6b7d00d7" aria-label="Anchor link for: 3e26e84f-0c0d-4362-a784-1cef6b7d00d7" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Create Short Url By POST</div></h3>
+<p><pre><code class="php">mainUrl  Your Url to Shorten E:g http://www.example.com/</code></pre></p>
+
+<div class="bd-clipboard">
+    <span class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</span>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+	<pre>
+        <code class="curl" data-lang="curl">
+        Method PHP CURL 'POST'<br>
+        $curl = curl_init();
+              $data = array(
+                'mainUrl' => 'http://www.example.com/',
+                  );
+              curl_setopt_array($curl, array(
+            CURLOPT_PORT => "443",
+            CURLOPT_URL => "https://zii.bz/api/short",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => $data, 
+                     CURLOPT_HTTPHEADER => array(),
+          ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            return "cURL Error #:" . $err;
+        } else {
+            return json_decode($response,true);
+        }
+
+        </code>
+    </pre>
+</figure>
+<h3 id="661cbd5fc8a74fdcaa6f31466e3bc2e2"><div><a class="anchorjs-link " href="#661cbd5f-c8a7-4fdc-aa6f-31466e3bc2e2" aria-label="Anchor link for: 661cbd5f-c8a7-4fdc-aa6f-31466e3bc2e2" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Get List Of All Shorten Url By GET</div></h3>
+
+<div class="bd-clipboard">
+    <span class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</span>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+	<pre>
+        <code class="curl" data-lang="curl">
+        Method PHP CURL 'GET'<br>
+        $curl = curl_init();
+            curl_setopt_array($curl, array(
+            CURLOPT_PORT => "443",
+            CURLOPT_URL => "https://zii.bz/api/gshort?accountID=eyJpdiI6ImZ2M0JTbUNvbTNsWHhTUjU1a1pacVE9PSIsInZhbHVlIjoiR0JWUFI4Z1dtN2U4aWRyNVVJYkZrNE1oeDYwQmRQXC9wUnBXVHlDamhHMEFkM2pJRlRjRFZRSDlBWXhWejl0ZWwiLCJtYWMiOiIzNTQzOGI2NWU5ODgxOTVjN2U0ZTE5ZWIwMjA3MTg2ODBiZDliOTk5ZGMzNDU5ZWU1NGMwNzM3NWUyNzUwNTk4In0",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+                     CURLOPT_HTTPHEADER => array(),
+          ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            return "cURL Error #:" . $err;
+        } else {
+            return json_decode($response,true);
+        }
+
+        </code>
+    </pre>
+</figure>
+<h3 id="6cb683cf137e4e51a39bf60075474cf9"><div><a class="anchorjs-link " href="#6cb683cf-137e-4e51-a39b-f60075474cf9" aria-label="Anchor link for: 6cb683cf-137e-4e51-a39b-f60075474cf9" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Get List Of Single Shorten Url By POST</div></h3>
+<p><pre><code class="php">UrlId &amp; accountID require to get Single  Shorted URL</code></pre></p>
+<p><pre><code class="php"></code></pre></p>
+
+<div class="bd-clipboard">
+    <span class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</span>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+	<pre>
+        <code class="curl" data-lang="curl">
+        Method PHP CURL 'POST'<br>
+        $curl = curl_init();
+              $data = array(
+                'accountID' => 'eyJpdiI6InZac242Nm1yNWlpT3VPTTlGWG9JSUE9PSIsInZhbHVlIjoiaXhKNVwvT0xrZk0rNE05UmR4Z3pwRWxYTmZCVjZOVWtuQmQwVmZrSWw0cUYreFRPaGU1UlVGVmo2WE9nb0dZMEgiLCJtYWMiOiJhNTRkMTUwZDFmMTUxMDc2ZDZmNzM1OTk1OTZkYmRlZmZmN2ZiOTk4MDc1MzNlY2Y1YWEwYWMzYWI2NmU5MjNjIn0',
+                 'UrlId' => 'GgiQIb',
+                  );
+              curl_setopt_array($curl, array(
+            CURLOPT_PORT => "443",
+            CURLOPT_URL => "https://zii.bz/api/gshort",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => $data, 
+                     CURLOPT_HTTPHEADER => array(),
+          ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            return "cURL Error #:" . $err;
+        } else {
+            return json_decode($response,true);
+        }
+
+        </code>
+    </pre>
+</figure>
+<h3 id="9abcdad0f96a42369c44acc2d96d588b"><div><a class="anchorjs-link " href="#9abcdad0-f96a-4236-9c44-acc2d96d588b" aria-label="Anchor link for: 9abcdad0-f96a-4236-9c44-acc2d96d588b" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Get List Of All Shorten Url By POST</div></h3>
+<p><pre><code class="php">accountID require to get all  Shorted URL</code></pre></p>
+
+<div class="bd-clipboard">
+    <span class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</span>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+	<pre>
+        <code class="curl" data-lang="curl">
+        Method PHP CURL 'POST'<br>
+        $curl = curl_init();
+              $data = array(
+                'accountID' => 'eyJpdiI6InZac242Nm1yNWlpT3VPTTlGWG9JSUE9PSIsInZhbHVlIjoiaXhKNVwvT0xrZk0rNE05UmR4Z3pwRWxYTmZCVjZOVWtuQmQwVmZrSWw0cUYreFRPaGU1UlVGVmo2WE9nb0dZMEgiLCJtYWMiOiJhNTRkMTUwZDFmMTUxMDc2ZDZmNzM1OTk1OTZkYmRlZmZmN2ZiOTk4MDc1MzNlY2Y1YWEwYWMzYWI2NmU5MjNjIn0',
+                  );
+              curl_setopt_array($curl, array(
+            CURLOPT_PORT => "443",
+            CURLOPT_URL => "https://zii.bz/api/gshort",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => $data, 
+                     CURLOPT_HTTPHEADER => array(),
+          ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            return "cURL Error #:" . $err;
+        } else {
+            return json_decode($response,true);
+        }
+
+        </code>
+    </pre>
+</figure>
+<h3 id="ca2ebb6a4d7b4caa8187a42065977998"><div><a class="anchorjs-link " href="#ca2ebb6a-4d7b-4caa-8187-a42065977998" aria-label="Anchor link for: ca2ebb6a-4d7b-4caa-8187-a42065977998" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Delete Short Url</div></h3>
+<p><pre><code class="php">UrlId  &amp;  accountID require to delect  Shorted URL</code></pre></p>
+<p><pre><code class="php"></code></pre></p>
+
+<div class="bd-clipboard">
+    <span class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</span>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+	<pre>
+        <code class="curl" data-lang="curl">
+        Method PHP CURL 'POST'<br>
+        $curl = curl_init();
+              $data = array(
+                'UrlId' => 'Q3TGFe',
+                 'accountID' => 'eyJpdiI6ImZ2M0JTbUNvbTNsWHhTUjU1a1pacVE9PSIsInZhbHVlIjoiR0JWUFI4Z1dtN2U4aWRyNVVJYkZrNE1oeDYwQmRQXC9wUnBXVHlDamhHMEFkM2pJRlRjRFZRSDlBWXhWejl0ZWwiLCJtYWMiOiIzNTQzOGI2NWU5ODgxOTVjN2U0ZTE5ZWIwMjA3MTg2ODBiZDliOTk5ZGMzNDU5ZWU1NGMwNzM3NWUyNzUwNTk4In0',
+                  );
+              curl_setopt_array($curl, array(
+            CURLOPT_PORT => "443",
+            CURLOPT_URL => "https://zii.bz/api/dshort",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+                        CURLOPT_POSTFIELDS => $data, 
+                     CURLOPT_HTTPHEADER => array(),
+          ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            return "cURL Error #:" . $err;
+        } else {
+            return json_decode($response,true);
+        }
+
+        </code>
+    </pre>
+</figure>
+<h3 id="ec2da4fe329b4281a74e2f0d3d92fa0b"><div><a class="anchorjs-link " href="#ec2da4fe-329b-4281-a74e-2f0d3d92fa0b" aria-label="Anchor link for: ec2da4fe-329b-4281-a74e-2f0d3d92fa0b" data-anchorjs-icon="" style="font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1em; line-height: inherit; font-family: anchorjs-icons; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Create Short Url By GET</div></h3>
+<p><pre><code class="php">Url_String  You to Shorting E:g http://www.example.com/</code></pre></p>
+
+<div class="bd-clipboard">
+    <span class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</span>
+</div>
+<div class="bd-clipboard">
+    <button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button>
+</div>
+<figure class="highlight">
+	<pre>
+        <code class="curl" data-lang="curl">
+        Method PHP CURL 'GET'<br>
+        $curl = curl_init();
+            curl_setopt_array($curl, array(
+            CURLOPT_PORT => "443",
+            CURLOPT_URL => "https://zii.bz/api/short?mainUrl=http://www.example.com/",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+                     CURLOPT_HTTPHEADER => array(),
+          ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            return "cURL Error #:" . $err;
+        } else {
+            return json_decode($response,true);
+        }
+
+        </code>
+    </pre>
+</figure>
+
+	<div id="sffsds">
+		<figure class="highlight">
+			<pre>
+					The MIT License (MIT)
+
+				Copyright (c) 2018 Zii Url Shortener
+
+		Permission is hereby granted, free of charge, to any person obtaining a copy
+		of this software and associated documentation files (the "Software"), to deal
+		in the Software without restriction, including without limitation the rights
+		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+		copies of the Software, and to permit persons to whom the Software is
+		furnished to do so, subject to the following conditions:
+
+		The above copyright notice and this permission notice shall be included in all
+		copies or substantial portions of the Software.
+
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+		SOFTWARE.
+</pre>
+</figure>
+	</div>
+        </main>
+      </div>
+    </div>
+
+<script src="/dd/jquery.min.js"></script>
+<script src="/dd/popper.min.js"></script>
+<script src="/dd/bootstrap-material-design.min.js"></script>
+<script src="/dd/perfect-scrollbar.jquery.min.js"></script>
+
+
+<script src="/dd/material-dashboard.js"></script>
+
+ <script src="/dd/docs.min.js"></script>
+
+<script src="/dd/highlight.pack.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+
+<script type="text/javascript">
+
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    };
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+};
+
+
+  (function (p,o,s,t,m,a,n) {
+    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+      (n = o.createElement("script")),
+      (n.id = s+t), (n.async = 1), (n.src = m), n
+    ));
+  }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+
+</script>
+
+
+</body></html>
